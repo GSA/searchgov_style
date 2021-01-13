@@ -1,0 +1,112 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.5
+
+#### Bundler ####
+
+Bundler/OrderedGems:
+  Enabled: false
+
+#### Layout ####
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+
+Layout/LineLength:
+  Description: 'Limit lines to 100 characters.'
+  Max: 100
+  # To make it possible to copy or click on URIs in the code, we allow lines
+  # containing a URI to be longer than Max.
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  # The IgnoreCopDirectives option causes the LineLength rule to ignore cop
+  # directives like '# rubocop: enable ...' when calculating a line's length.
+  IgnoreCopDirectives: false
+  # The IgnoredPatterns option is a list of !ruby/regexp and/or string
+  # elements. Strings will be converted to Regexp objects. A line that matches
+  # any regular expression listed in this option will be ignored by LineLength.
+  IgnoredPatterns: []
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+#### Metrics ####
+
+Metrics/BlockLength:
+  CountComments: false  # count full line comments?
+  Max: 25
+  IgnoredMethods:
+    # By default, exclude the `#refine` method, as it tends to have larger
+    # associated blocks.
+    - refine
+    # Rspec blocks
+    - describe
+    - context
+    - include_context
+    - shared_examples_for
+
+#### Performance ####
+
+Performance/TimesMap:
+  # Disabling. Using `Array.new` with a block is marginally more performant, but
+  # `n.times.map` is much more readable. The former can be used when n is large.
+  # https://stackoverflow.com/questions/41518896/why-does-rubocop-suggest-replacing-times-map-with-array-new
+  Enabled: false
+
+#### Rails ####
+
+Rails/SkipsModelValidations:
+  # We are leaving this cop enabled as a warning.
+  # Failures can be approved as needed during code review.
+  Enabled: true
+
+#### RSpec ####
+
+# See also the list of RSpec statements that we exempt from the block
+# length cop, under Metrics/BlockLength above
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/ExpectChange:
+  EnforcedStyle: block
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
+#### Style ####
+
+Style/Documentation:
+  Enabled: false
+
+Style/MethodCallWithArgsParentheses:
+  Description: 'Use parentheses for method calls with arguments.'
+  Enabled: true
+  IgnoredMethods: ['require']
+  Exclude:
+    - 'spec/**/*'
+    - 'Gemfile'
+    - 'db/**/*'
+    - '*.gemspec'
+
+Style/MixinUsage:
+  Exclude:
+    - bin/*
+
+Style/RescueStandardError:
+  Enabled: false
