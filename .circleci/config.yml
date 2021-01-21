@@ -18,3 +18,7 @@ jobs:
           # CodeClimate will also run Rubocop, but only on PRs.
           # Running Rubocop in CircleCI allows us to see failures earlier
           command: bundle exec rubocop
+      - run:
+          name: Build Gem
+          # Ensure the gem can be successfully built
+          command: bundle exec rake build
