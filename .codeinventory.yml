@@ -1,0 +1,12 @@
+name: searchgov_style
+description: 'Shared Rubocop configuration for Search.gov repositories'
+license: 'https://creativecommons.org/publicdomain/zero/1.0'
+openSourceProject: 1
+governmentWideReuseProject: 1
+tags:
+    - GSA
+    - Search.gov
+    - search
+    - rubocop
+contact:
+    email: search@support.digitalgov.gov
