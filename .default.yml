@@ -81,6 +81,7 @@ Rails/SkipsModelValidations:
 RSpec/DescribeClass:
   Exclude:
     - 'spec/lib/tasks/**'
+    - 'spec/system/**'
 
 RSpec/ExampleLength:
   Enabled: false
