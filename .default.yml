@@ -77,10 +77,11 @@ Rails/SkipsModelValidations:
 # See also the list of RSpec statements that we exempt from the block
 # length cop, under Metrics/BlockLength above
 
-# For this group of specs, there is no class
+# For these specs, there is no class
 RSpec/DescribeClass:
   Exclude:
     - 'spec/lib/tasks/**'
+    - 'spec/lib/system/**'
 
 RSpec/ExampleLength:
   Enabled: false
