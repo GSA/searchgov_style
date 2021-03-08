@@ -82,11 +82,17 @@ RSpec/DescribeClass:
   Exclude:
     - 'spec/lib/tasks/**'
 
+RSpec/DescribedClass:
+  SkipBlocks: true
+
 RSpec/ExampleLength:
   Enabled: false
 
 RSpec/ExpectChange:
   EnforcedStyle: block
+
+RSpec/ImplicitSubject:
+  EnforcedStyle: single_statement_only
 
 RSpec/MultipleExpectations:
   Enabled: false
