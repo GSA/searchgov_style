@@ -4,7 +4,7 @@ require_relative 'lib/searchgov/style/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'searchgov_style'
-  spec.version       = '0.1.0'
+  spec.version       = SearchgovStyle::VERSION
   spec.authors       = ['MothOnMars']
   spec.email         = ['437455+MothOnMars@users.noreply.github.com']
 
