@@ -116,3 +116,6 @@ Style/MixinUsage:
 
 Style/RescueStandardError:
   Enabled: false
+
+Style/SymbolArray:
+  MinSize: 4
