@@ -1,6 +1,6 @@
 # searchgov_style
 
-Shared Rubocop configuration for Search.gov repositories
+Shared [Rubocop](https://rubocop.org/) configuration for Search.gov repositories
 
 ## Installation
 
@@ -49,6 +49,23 @@ Install the development gems:
 Run Rubocop on the gem repository itself:
 
     $ rubocop
+
+### Upgrading Rubocop
+
+To upgrade the version of Rubocop used by this gem, perform the
+following steps to ensure [compatibility with CodeClimate](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions):
+
+1. Verify that the new version is supported by CodeClimate:  
+   [list of Rubocop channels for CodeClimate](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop)
+1. Verify that the new version is listed as a channel for the Rubocop engine for the CodeClimate CLI:  
+   [CodeClimate Engines](https://github.com/codeclimate/codeclimate/blob/master/config/engines.yml)
+1. Bump the version of Rubocop in the [gemspec](searchgov-style.gemspec)
+1. Bump the Rubocop channel in [.codeclimate.yml](.codeclimate.yml)
+
+You can verify your configuration and compatibility locally using the [CodeClimate CLI](https://github.com/codeclimate/codeclimate):
+
+    $ codeclimate validate-config
+    $ codeclimate analyze lib/ -e rubocop
 
 ## Contributing
 
