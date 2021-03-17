@@ -83,11 +83,17 @@ RSpec/DescribeClass:
     - 'spec/lib/tasks/**'
     - 'spec/system/**'
 
+RSpec/DescribedClass:
+  SkipBlocks: true
+
 RSpec/ExampleLength:
   Enabled: false
 
 RSpec/ExpectChange:
   EnforcedStyle: block
+
+RSpec/ImplicitSubject:
+  EnforcedStyle: single_statement_only
 
 RSpec/MultipleExpectations:
   Enabled: false
