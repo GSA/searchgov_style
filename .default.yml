@@ -111,6 +111,8 @@ Style/MethodCallWithArgsParentheses:
   Enabled: true
   IgnoredMethods:
     - require
+    # https://rubystyle.guide/#exceptions
+    - raise
     # Ignore logging methods, as they are considered part of an internal DSL
     # https://rubystyle.guide/#methods-that-are-part-of-an-internal-dsl
     - debug
