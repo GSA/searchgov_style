@@ -95,6 +95,9 @@ RSpec/ExpectChange:
 RSpec/ImplicitSubject:
   EnforcedStyle: single_statement_only
 
+RSpec/MessageChain:
+  Enabled: false
+
 RSpec/MultipleExpectations:
   Enabled: false
 
