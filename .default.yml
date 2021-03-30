@@ -83,6 +83,9 @@ RSpec/ExpectChange:
 RSpec/ImplicitSubject:
   EnforcedStyle: single_statement_only
 
+RSpec/MessageChain:
+  Enabled: false
+
 RSpec/MultipleExpectations:
   Enabled: false
 
@@ -97,7 +100,17 @@ Style/Documentation:
 Style/MethodCallWithArgsParentheses:
   Description: 'Use parentheses for method calls with arguments.'
   Enabled: true
-  IgnoredMethods: ['require']
+  IgnoredMethods:
+    - require
+    # https://rubystyle.guide/#exceptions
+    - raise
+    # Ignore logging methods, as they are considered part of an internal DSL
+    # https://rubystyle.guide/#methods-that-are-part-of-an-internal-dsl
+    - debug
+    - info
+    - warn
+    - error
+    - fatal
   Exclude:
     - 'spec/**/*'
     - 'Gemfile'

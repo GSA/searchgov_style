@@ -25,10 +25,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 2.1.4'
   spec.add_development_dependency 'rake', '~> 13.0'
 
-  # Bumping Rubocop? Be sure the version is supported by CodeClimate,
-  # and set the channel in .codeclimate.yml
-  # https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions
-  spec.add_dependency 'rubocop', '1.9.1'
+  # Refer to the README for instructions on upgrading Rubocop
+  spec.add_dependency 'rubocop', '1.8.1'
   spec.add_dependency 'rubocop-performance', '~> 1.9'
   spec.add_dependency 'rubocop-rails', '~> 2.9'
   spec.add_dependency 'rubocop-rake', '~> 0.5'
