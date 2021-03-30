@@ -111,6 +111,9 @@ Style/MethodCallWithArgsParentheses:
     - warn
     - error
     - fatal
+    # Ignore Rails controller DSL methods
+    - redirect_to
+    - render
   Exclude:
     - 'spec/**/*'
     - 'Gemfile'
