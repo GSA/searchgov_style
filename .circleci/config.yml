@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: Install Bundler
-          command: gem install bundler:2.1.4
+          command: gem install bundler:2.2
       - ruby/bundle-install
       - run:
           name: Rubocop
