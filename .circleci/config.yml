@@ -5,13 +5,13 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.5.8
+      - image: circleci/ruby:2.6.7
     executor: ruby/default
     steps:
       - checkout
       - run:
           name: Install Bundler
-          command: gem install bundler:2.1.4
+          command: gem install bundler:2.2
       - ruby/bundle-install
       - run:
           name: Rubocop
