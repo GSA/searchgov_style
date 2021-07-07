@@ -114,7 +114,11 @@ Style/MethodCallWithArgsParentheses:
   Description: 'Use parentheses for method calls with arguments.'
   Enabled: true
   IgnoredMethods:
+    # Ignore Ruby keyword methods:
+    # https://rubystyle.guide/#methods-that-have-keyword-status-in-ruby
     - require
+    - return
+    - yield
     # https://rubystyle.guide/#exceptions
     - raise
     # Ignore logging methods, as they are considered part of an internal DSL
