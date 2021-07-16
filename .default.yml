@@ -9,17 +9,10 @@ AllCops:
   TargetRubyVersion: 2.5
   Exclude:
     - 'bin/**/*'
+    - 'config/**/*'
+    - 'config.ru'
     - 'db/**/*'
     - 'vendor/**/*'
-    # The following are (mostly) generated code; don't hold Rails'
-    # code generators to our coding standard.
-    - 'config/application.rb'
-    - 'config/boot.rb'
-    - 'config/environment.rb'
-    - 'config/environments/**/*'
-    - 'config/puma.rb'
-    - 'config/routes.rb'
-    - 'config/spring.rb'
 
 #### Bundler ####
 
