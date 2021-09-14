@@ -123,9 +123,15 @@ Style/MethodCallWithArgsParentheses:
     - warn
     - error
     - fatal
-    # Ignore Rails controller DSL methods
+    # Ignore Rails DSL methods
+    # association methods other than has_many and HABTM are automatically excluded
+    - has_and_belongs_to_many
+    - has_many
     - redirect_to
     - render
+    - reset_callbacks
+    - set_callback
+    - skip_callback
   Exclude:
     - 'spec/**/*'
     - 'Gemfile'
