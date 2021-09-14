@@ -36,6 +36,12 @@ Layout/LineLength:
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
+#### Lint ####
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    # https://github.com/rubocop/rubocop/issues/4222#issuecomment-290655562
+    - 'spec/**/*'
+
 #### Metrics ####
 
 Metrics/BlockLength:
