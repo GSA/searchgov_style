@@ -124,9 +124,7 @@ Style/MethodCallWithArgsParentheses:
     - error
     - fatal
     # Ignore Rails DSL methods
-    # association methods other than has_many and HABTM are automatically excluded
-    - has_and_belongs_to_many
-    - has_many
+    - order
     - redirect_to
     - render
     - reset_callbacks
