@@ -124,6 +124,8 @@ Style/MethodCallWithArgsParentheses:
     - error
     - fatal
     # Ignore Rails DSL methods
+    - has_many
+    - has_one
     - order
     - redirect_to
     - render
