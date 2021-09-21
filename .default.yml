@@ -129,9 +129,15 @@ Style/MethodCallWithArgsParentheses:
     - warn
     - error
     - fatal
-    # Ignore Rails controller DSL methods
+    # Ignore Rails DSL methods
+    - has_many
+    - has_one
+    - order
     - redirect_to
     - render
+    - reset_callbacks
+    - set_callback
+    - skip_callback
   Exclude:
     - 'spec/**/*'
     - 'Gemfile'
