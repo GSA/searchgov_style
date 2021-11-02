@@ -80,8 +80,8 @@ Rails/SkipsModelValidations:
 # For this group of specs, there is no class
 RSpec/DescribeClass:
   Exclude:
-    - 'spec/lib/tasks/**'
-    - 'spec/system/**'
+    - 'spec/lib/tasks/**/*'
+    - 'spec/system/**/*'
 
 RSpec/DescribedClass:
   SkipBlocks: true
