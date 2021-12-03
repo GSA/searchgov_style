@@ -26,9 +26,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 13.0'
 
   # Refer to the README for instructions on upgrading Rubocop
-  spec.add_dependency 'rubocop', '1.8.1'
+  spec.add_dependency 'rubocop', '1.22.3'
   spec.add_dependency 'rubocop-performance', '~> 1.9'
   spec.add_dependency 'rubocop-rails', '~> 2.9'
   spec.add_dependency 'rubocop-rake', '~> 0.5'
-  spec.add_dependency 'rubocop-rspec', '~> 2.1'
+  spec.add_dependency 'rubocop-rspec', '~> 2.5'
 end
