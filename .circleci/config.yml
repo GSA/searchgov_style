@@ -12,6 +12,9 @@ jobs:
 
       # Install gems with Bundler
       - ruby/install-deps
+          # Workaround for Bundler not using gem cache
+          # https://github.com/CircleCI-Public/ruby-orb/pull/77
+          path: /home/circleci/.rubygems
 
       - run:
           name: Rubocop
