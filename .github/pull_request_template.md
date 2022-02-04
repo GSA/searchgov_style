@@ -11,6 +11,9 @@ Please ensure you have addressed all concerns below before marking a PR "ready f
 
 - [ ] Automated checks pass, if applicable. If checks do not pass, explain reason for failures:
 
+- [ ] You have [upgraded Rubocop](https://github.com/GSA/searchgov_style#upgrading-rubocop) to the highest version supported by
+  CodeClimate
+
 - [ ] You have merged the latest changes from `main` into your branch.
  
 - [ ] Your target branch is `main`, or you have specified the reason for an alternate branch here:
