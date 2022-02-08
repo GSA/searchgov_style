@@ -57,6 +57,12 @@ Metrics/BlockLength:
     - include_context
     - shared_examples_for
 
+Metrics/MethodLength:
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
+
 #### Performance ####
 
 Performance/TimesMap:
