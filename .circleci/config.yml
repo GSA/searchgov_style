@@ -1,18 +1,17 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@0.1.2
+  ruby: circleci/ruby@1.4.0
 
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6.7
+      - image: cimg/ruby:2.7.5
     executor: ruby/default
     steps:
       - checkout
-      - run:
-          name: Install Bundler
-          command: gem install bundler:2.2
-      - ruby/bundle-install
+      # Install gems with Bundler
+      - ruby/install-deps:
+          with-cache: false
       - run:
           name: Rubocop
           # CodeClimate will also run Rubocop, but only on PRs.

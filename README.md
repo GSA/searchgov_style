@@ -62,8 +62,9 @@ following steps to ensure [compatibility with CodeClimate](https://docs.codeclim
 1. Bump the version of Rubocop in the [gemspec](searchgov-style.gemspec)
 1. Bump the Rubocop channel in [.codeclimate.yml](.codeclimate.yml)
 
-You can verify your configuration and compatibility locally using the [CodeClimate CLI](https://github.com/codeclimate/codeclimate):
+Verify your configuration and compatibility locally using the [CodeClimate CLI](https://github.com/codeclimate/codeclimate):
 
+    $ bundle update
     $ codeclimate validate-config
     $ codeclimate analyze lib/ -e rubocop
 
