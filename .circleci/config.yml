@@ -11,7 +11,9 @@ jobs:
       - checkout
       # Install gems with Bundler
       - ruby/install-deps:
-          with-cache: false
+          # Need to clear the gem cache? Set or bump the CACHE_VERSION in your
+          # CircleCi project: Project Settings > Environment Variables
+          key: searchgov_style-{{ .Environment.CACHE_VERSION }}-{{checksum "Gemfile.lock" }}
       - run:
           name: Rubocop
           # CodeClimate will also run Rubocop, but only on PRs.
