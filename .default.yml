@@ -6,7 +6,6 @@ require:
 
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 2.5
   Exclude:
     - 'bin/**/*'
     - 'config/**/*'
@@ -83,14 +82,9 @@ Rails/SkipsModelValidations:
 # See also the list of RSpec statements that we exempt from the block
 # length cop, under Metrics/BlockLength above
 
-# For this group of specs, there is no class
-# We can remove these exclusions once we're using rubocop-rspec >= 2.5 & rubocop >= 1.19,
-# which depend on unreleased changes to the Code Climate CLI:
-# https://github.com/codeclimate/codeclimate/commit/ab6ef5ce65afad5356ed3d558ac73dbc4fd4d49f
 RSpec/DescribeClass:
   Exclude:
     - 'spec/lib/tasks/**/*'
-    - 'spec/system/**/*'
 
 RSpec/DescribedClass:
   SkipBlocks: true

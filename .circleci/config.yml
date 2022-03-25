@@ -1,18 +1,19 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@0.1.2
+  ruby: circleci/ruby@1.4.0
 
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6.7
+      - image: cimg/ruby:2.7.5
     executor: ruby/default
     steps:
       - checkout
-      - run:
-          name: Install Bundler
-          command: gem install bundler:2.2
-      - ruby/bundle-install
+      # Install gems with Bundler
+      - ruby/install-deps:
+          # Need to clear the gem cache? Set or bump the CACHE_VERSION in your
+          # CircleCi project: Project Settings > Environment Variables
+          key: searchgov_style-{{ .Environment.CACHE_VERSION }}-{{checksum "Gemfile.lock" }}
       - run:
           name: Rubocop
           # CodeClimate will also run Rubocop, but only on PRs.
