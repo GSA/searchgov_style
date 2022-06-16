@@ -50,11 +50,9 @@ Metrics/BlockLength:
     # By default, exclude the `#refine` method, as it tends to have larger
     # associated blocks.
     - refine
-    # Rspec blocks
-    - describe
-    - context
-    - include_context
-    - shared_examples_for
+  Exclude:
+    # Specs by nature tend to have lengthy, nested blocks
+    - 'spec/**/*'
 
 Metrics/MethodLength:
   CountAsOne:
