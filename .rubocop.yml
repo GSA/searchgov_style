@@ -1,3 +1,0 @@
-# This is the rubocop configuration file for this gem.
-# Repos using this gem should inherit from .default.yml, not this file.
-inherit_from: .default.yml
