@@ -52,6 +52,7 @@ Metrics/BlockLength:
     - refine
   Exclude:
     # Specs by nature tend to have lengthy, nested blocks
+    - '*.gemspec'
     - 'spec/**/*'
 
 Metrics/MethodLength:
