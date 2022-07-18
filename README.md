@@ -24,11 +24,29 @@ Or install it yourself as:
 
 In the root directory of the repo using this gem, create a `.rubocop.yml` with the following directives:
 
+### For repo that use Code Climate:
+
+```yaml
+inherit_from:
+  - https://raw.githubusercontent.com/GSA/searchgov_style/main/.default.yml
+```
+
+### For repo that do not use Code Climate:
+
 ```yaml
 inherit_gem:
   searchgov_style:
     - .default.yml
 ```
+
+* Generate a `.rubocop_todo.yml`:
+
+        rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit 2000
+
+* Add following entry to `.gitignore`:
+
+        .rubocop*default-yml
+
 
 Now, run:
 
