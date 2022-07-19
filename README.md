@@ -43,7 +43,7 @@ inherit_gem:
 
         rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit 2000
 
-* Add following entry to `.gitignore`:
+* Add the following entry to `.gitignore`:
 
         .rubocop*default-yml
 
