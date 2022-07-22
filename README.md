@@ -20,9 +20,18 @@ Or install it yourself as:
 
     $ gem install searchgov_style
 
-## Usage
-
 In the root directory of the repo using this gem, create a `.rubocop.yml` with the following directives:
+
+### For repositories that use Code Climate:
+
+Refer to the [work around](https://github.com/codeclimate/codeclimate-rubocop/issues/71#issuecomment-635055223) for Code Climate's inability to use Rubocop's inherit_gem directive.
+
+```yaml
+inherit_from:
+  - https://raw.githubusercontent.com/GSA/searchgov_style/main/.default.yml
+```
+
+### For repositories that do not use Code Climate:
 
 ```yaml
 inherit_gem:
@@ -30,7 +39,17 @@ inherit_gem:
     - .default.yml
 ```
 
-Now, run:
+* Generate a `.rubocop_todo.yml`:
+
+        rubocop --auto-gen-config --auto-gen-only-exclude --exclude-limit 2000
+
+* Add the following entry to `.gitignore`:
+
+        .rubocop*default-yml
+
+## Usage
+
+Run:
 
 ```bash
 $ bundle exec rubocop
