@@ -103,6 +103,9 @@ RSpec/MessageChain:
 RSpec/MultipleExpectations:
   Enabled: false
 
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
 RSpec/NestedGroups:
   Enabled: false
 

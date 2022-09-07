@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Shared Rubocop configuration for Search.gov repositories'
   spec.homepage      = 'https://github.com/GSA/searchgov_style'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.6.0')
 
   spec.metadata = {
     'homepage_uri' => spec.homepage,
@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 13.0'
 
   # Refer to the README for instructions on upgrading Rubocop
-  spec.add_dependency 'rubocop', '1.23.0'
+  spec.add_dependency 'rubocop', '1.31.0'
   spec.add_dependency 'rubocop-performance', '~> 1.9'
   spec.add_dependency 'rubocop-rails', '~> 2.9'
   spec.add_dependency 'rubocop-rake', '~> 0.5'
