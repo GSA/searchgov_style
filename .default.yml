@@ -55,6 +55,13 @@ Metrics/BlockLength:
     - '*.gemspec'
     - 'spec/**/*'
 
+Metrics/ClassLength:
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
+    - method_call
+
 Metrics/MethodLength:
   CountAsOne:
     - array
