@@ -60,7 +60,6 @@ Metrics/ClassLength:
     - array
     - hash
     - heredoc
-    - method_call
 
 Metrics/MethodLength:
   CountAsOne:
