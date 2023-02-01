@@ -11,7 +11,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.4)
+    activesupport (7.0.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -25,10 +25,10 @@ GEM
     parallel (1.22.1)
     parser (3.2.0.0)
       ast (~> 2.4.1)
-    rack (3.0.3)
+    rack (3.0.4.1)
     rainbow (3.1.1)
     rake (13.0.6)
-    regexp_parser (2.6.1)
+    regexp_parser (2.6.2)
     rexml (3.2.5)
     rubocop (1.39.0)
       json (~> 2.3)
@@ -51,12 +51,12 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.16.0)
+    rubocop-rspec (2.17.1)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (2.4.0)
+    unicode-display_width (2.4.2)
 
 PLATFORMS
   ruby
