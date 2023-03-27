@@ -46,7 +46,7 @@ Lint/AmbiguousBlockAssociation:
 Metrics/BlockLength:
   CountComments: false  # count full line comments?
   Max: 25
-  IgnoredMethods:
+  AllowedMethods:
     # By default, exclude the `#refine` method, as it tends to have larger
     # associated blocks.
     - refine
@@ -131,7 +131,7 @@ Style/IfUnlessModifier:
 Style/MethodCallWithArgsParentheses:
   Description: 'Use parentheses for method calls with arguments.'
   Enabled: true
-  IgnoredMethods:
+  AllowedMethods:
     # Ignore Ruby keyword methods:
     # https://rubystyle.guide/#methods-that-have-keyword-status-in-ruby
     - require
