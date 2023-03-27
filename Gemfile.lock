@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    searchgov_style (0.1.22)
+    searchgov_style (0.1.23)
       rubocop (= 1.39.0)
       rubocop-performance (~> 1.9)
       rubocop-rails (~> 2.9)
