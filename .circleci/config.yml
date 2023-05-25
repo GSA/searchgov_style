@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@1.4.0
+  ruby: circleci/ruby@2.0.1
 
 jobs:
   build:
     docker:
-      - image: cimg/ruby:2.7.5
+      - image: cimg/ruby:3.0.6
     executor: ruby/default
     steps:
       - checkout
