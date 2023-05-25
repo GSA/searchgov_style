@@ -125,6 +125,10 @@ RSpec/NestedGroups:
 Style/Documentation:
   Enabled: false
 
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'spec/**/*'
+
 Style/IfUnlessModifier:
   Enabled: false
 
