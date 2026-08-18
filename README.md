@@ -1,5 +1,5 @@
-**This repo has been archived as it no longer is needed to support SearchGov. (Tuesday August 18, 2026)
-**
+# This repo has been archived as it no longer is needed to support SearchGov. (Tuesday August 18, 2026)
+
 # searchgov_style
 
 Shared [Rubocop](https://rubocop.org/) configuration for Search.gov repositories
